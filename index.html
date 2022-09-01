@@ -6,6 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cali to World</title>
     <link rel = "icon" href ="./images/location.png"  type = "image/x-icon">
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAvhQMcmtQSrtLvcsR1uswQC9naO6lYiFw",
+        authDomain: "calitoworld.firebaseapp.com",
+        projectId: "calitoworld",
+        storageBucket: "calitoworld.appspot.com",
+        messagingSenderId: "909362206352",
+        appId: "1:909362206352:web:46ac6b1ff250657bcfaa15",
+        measurementId: "G-YPECTYWBQ2"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -30,7 +53,7 @@
 
 <header class="header">
 
-    <a href="./index.html" class="logo"><i class="fa fa-globe"></i>CaliToWorld..</a>
+    <a href="./index.html" class="logo"><i class="fa fa-globe"></i> CaliToWorld..</a>
 
     <nav class="navbar">
         <div id="nav-close" class="fas fa-times"></div>
@@ -38,6 +61,7 @@
         <a href="./about.html">About</a>
         <a href="./services.html">Services</a>
         <a href="./book.html">reserve</a>
+        <a href="https://andresjuandavid.github.io/">portfolio</a>
     </nav>
 
     <div class="icons">
@@ -71,18 +95,18 @@
         <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-                <div class="box" style="background: url(./images/sanantonioedited.jpg) no-repeat;">
+                <div class="box" style="background: url(./images/cali3.jpg) no-repeat;">
                     <div class="content">
-                        <span>Welcome to the Branch of </span>
-                        <h3>HEAVEN</h3>
-                        <p>Here you will get to know a lot about CALI and of course its SAlSA</p>
+                        <span>Welcome to the salsa</span>
+                        <h3>capital</h3>
+                        <p>Here you will get to know a lot about cali and of course its salsa</p>
                         <a href="./services.html" class="btn">I want to</a>
                     </div>
                 </div>
             </div>
 
             <div class="swiper-slide">
-                <div class="box second" style="background: url(./images/dancingsalsa.jpg) no-repeat;">
+                <div class="box second" style="background: url(./images/stage.jpg) no-repeat;">
                     <div class="content">
                         <span>do something</span>
                         <h3>amazing</h3>
@@ -93,7 +117,7 @@
             </div>
 
             <div class="swiper-slide">
-                <div class="box" style="background: url(./images/coupledancing.jpg) no-repeat;">
+                <div class="box" style="background: url(./images/girlholdinghand.jpg) no-repeat;">
                     <div class="content">
                         <span>explore</span>
                         <h3>new experiences</h3>
@@ -177,7 +201,7 @@
 
 <!-- shop section starts  -->
 
-<!-- <section class="shop" id="shop">
+<section class="shop" id="shop">
 
     <h1 class="heading">featured products</h1>
 
@@ -187,7 +211,7 @@
 
             <div class="swiper-slide slide">
                 <div class="image">
-                    <img src="images/product-1.jpg" alt="">
+                    <img src="./images/taza2.jpg" alt="">
                     <div class="icons">
                         <a href="#" class="fas fa-shopping-cart"></a>
                         <a href="#" class="fas fa-eye"></a>
@@ -195,8 +219,8 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h3>survival kits</h3>
-                    <div class="price"> $5.00 - $25.00 </div>
+                    <h3>Mugs and Tazas</h3>
+                    <div class="price"> $5.00 - $20.00 </div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -209,7 +233,7 @@
 
             <div class="swiper-slide slide">
                 <div class="image">
-                    <img src="images/product-2.jpg" alt="">
+                    <img src="./images/shirt.jpg" alt="">
                     <div class="icons">
                         <a href="#" class="fas fa-shopping-cart"></a>
                         <a href="#" class="fas fa-eye"></a>
@@ -217,8 +241,8 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h3>survival kits</h3>
-                    <div class="price"> $5.00 - $25.00 </div>
+                    <h3>cool shirts </h3>
+                    <div class="price"> $15.00 - $50.00 </div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -231,7 +255,7 @@
 
             <div class="swiper-slide slide">
                 <div class="image">
-                    <img src="images/product-3.jpg" alt="">
+                    <img src="./images/bolsawayu.jpg" alt="">
                     <div class="icons">
                         <a href="#" class="fas fa-shopping-cart"></a>
                         <a href="#" class="fas fa-eye"></a>
@@ -239,8 +263,8 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h3>survival kits</h3>
-                    <div class="price"> $5.00 - $25.00 </div>
+                    <h3>Bolsas weaved by hand</h3>
+                    <div class="price"> $20.00 - $50.00 </div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -253,7 +277,7 @@
 
             <div class="swiper-slide slide">
                 <div class="image">
-                    <img src="images/product-4.jpg" alt="">
+                    <img src="./images/gatodelrio.jpg" alt="">
                     <div class="icons">
                         <a href="#" class="fas fa-shopping-cart"></a>
                         <a href="#" class="fas fa-eye"></a>
@@ -261,8 +285,8 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h3>survival kits</h3>
-                    <div class="price"> $5.00 - $25.00 </div>
+                    <h3>Cute stickers</h3>
+                    <div class="price"> $5.00 - $10.00 </div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -275,7 +299,7 @@
 
             <div class="swiper-slide slide">
                 <div class="image">
-                    <img src="images/product-5.jpg" alt="">
+                    <img src="./images/magnet.jpg" alt="">
                     <div class="icons">
                         <a href="#" class="fas fa-shopping-cart"></a>
                         <a href="#" class="fas fa-eye"></a>
@@ -283,8 +307,8 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h3>survival kits</h3>
-                    <div class="price"> $5.00 - $25.00 </div>
+                    <h3>Magnets to decorate</h3>
+                    <div class="price"> $5.00 - $15.00 </div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -297,7 +321,7 @@
 
             <div class="swiper-slide slide">
                 <div class="image">
-                    <img src="images/product-6.jpg" alt="">
+                    <img src="./images/taza.jpeg" alt="">
                     <div class="icons">
                         <a href="#" class="fas fa-shopping-cart"></a>
                         <a href="#" class="fas fa-eye"></a>
@@ -305,7 +329,7 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h3>survival kits</h3>
+                    <h3>mas pocillos</h3>
                     <div class="price"> $5.00 - $25.00 </div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -324,7 +348,7 @@
 
     </div>
 
-</section> -->
+</section>
 
 <!-- shop section ends -->
 
