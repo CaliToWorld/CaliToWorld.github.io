@@ -39,6 +39,9 @@
       const analytics = getAnalytics(app);
     </script>
 
+    <!--    Animation on Scroll   -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -78,6 +81,7 @@
         <a href="#" class="fas fa-shopping-cart"></a>
         <div id="menu-btn" class="fas fa-bars"></div>
     </div>
+    <div id="google_translate_element" class="translate"></div>
 
 </header>
 
@@ -115,7 +119,7 @@
             </div>
 
             <div class="swiper-slide">
-                <div class="box second" style="background: url(./images/stage.jpg) no-repeat;">
+                <div class="box second" style="background: url(./images/iglesia.jpg) no-repeat;">
                     <div class="content">
                         <span>do something</span>
                         <h3>amazing</h3>
@@ -126,7 +130,7 @@
             </div>
 
             <div class="swiper-slide">
-                <div class="box" style="background: url(./images/girlholdinghand.jpg) no-repeat;">
+                <div class="box" style="background: url(./images/DelirioCali.jpg) no-repeat;">
                     <div class="content">
                         <span>explore</span>
                         <h3>new experiences</h3>
@@ -155,21 +159,21 @@
 
     <div class="box-container">
 
-        <div class="box">
+        <div class="box" data-aos="zoom-in-right" data-aos-duration="1000">
             <img src="./images/music.jpg" alt="">
             <h3>Music and Salsa</h3>
             <p>you will experience why Cali is called the salsa capital.</p>
             <a href="./services.html" class="btn">Know more</a>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="zoom-in-up" data-aos-duration="1000">
             <img src="./images/tours.jpg" alt="">
             <h3>Tours</h3>
             <p>travel to those villages or towns worth visiting around Cali.</p>
             <a href="./services.html" class="btn">Know more</a>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="zoom-in-left" data-aos-duration="1000">
             <img src="./images/food.jpg" alt="">
             <h3>Food and more</h3>
             <p>discover all cali and colombia typical cuisine, and don't forget the sweets!.</p>
@@ -193,7 +197,7 @@
 
 <section class="about" id="about">
 
-    <div class="image">
+    <div class="image" data-aos="slide-up" data-aos-duration="1000">
         <img src="./images/toast.jpg" alt="">
     </div>
 
@@ -320,7 +324,7 @@
                     <div class="price"> $5.00 - $15.00 </div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> 
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
@@ -369,75 +373,75 @@
 
     <div class="box-container">
 
-        <div class="box">
+        <div class="box" data-aos="flip-right">
             <div class="image">
                 <img src="./images/salsax1.jpg" alt="">
             </div>
             <div class="content">
                 <h3>Salsa x1</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                <p>Dance Salsa like a local with our classes!</p>
                 <div class="price">$250 - $450</div>
-                <a href="#" class="btn">explore now</a>
+                <a href="./services.html" class="btn">explore now</a>
             </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="flip-left">
             <div class="image">
                 <img src="./images/rumba.jpg" alt="">
             </div>
             <div class="content">
                 <h3>Salsa y Bachata</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                <p>if Salsa isn't enough, we have Bachata lessons too!</p>
                 <div class="price">$250 - $450</div>
-                <a href="#" class="btn">explore now</a>
+                <a href="./services.html" class="btn">explore now</a>
             </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="flip-right">
             <div class="image">
                 <img src="./images/bar.jpg" alt="">
             </div>
             <div class="content">
                 <h3>Salsa Tour</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                <p>Salsa tours including Salsa Museum and iconic places like Jairo Valera square.</p>
                 <div class="price">$250 - $450</div>
-                <a href="#" class="btn">explore now</a>
+                <a href="./services.html" class="btn">explore now</a>
             </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="flip-left">
             <div class="image">
                 <img src="./images/drums.jpg" alt="">
             </div>
             <div class="content">
                 <h3>Salsa tour with more Salsa</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                <p>Tours around Cali ending at a local salsa bar to practices your moves yayy!.</p>
                 <div class="price">$250 - $450</div>
-                <a href="#" class="btn">explore now</a>
+                <a href="./services.html" class="btn">explore now</a>
             </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="flip-right">
             <div class="image">
                 <img src="./images/spanish.jpg" alt="">
             </div>
             <div class="content">
                 <h3>Tour, Salsa and Spanish</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                <p>Also tours guided in spanish if you want to improve listening skills.</p>
                 <div class="price">$250 - $450</div>
-                <a href="#" class="btn">explore now</a>
+                <a href="./services.html" class="btn">explore now</a>
             </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="flip-left">
             <div class="image">
                 <img src="./images/happy.jpg" alt="">
             </div>
             <div class="content">
                 <h3>Upcoming</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
+                <p>we have more services coming soon. stay tuned!</p>
                 <div class="price">$250 - $450</div>
-                <a href="#" class="btn">explore now</a>
+                <a href="./services.html" class="btn">explore now</a>
             </div>
         </div>
 
@@ -491,7 +495,7 @@
             </div>
 
             <div class="swiper-slide slide">
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem laborum pariatur alias, culpa illum quaerat, aliquid laboriosam voluptatem nisi repellat obcaecati, adipisci esse ab delectus dolorum ut recusandae ipsam?</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem laborum pariatur alias, culpa illum quaerat,</p>
                 <div class="user">
                     <img src="images/pic-4.png" alt="">
                     <div class="info">
@@ -502,7 +506,7 @@
             </div>
 
             <div class="swiper-slide slide">
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem laborum pariatur alias, culpa illum quaerat, aliquid laboriosam voluptatem nisi repellat obcaecati, adipisci esse ab delectus dolorum ut recusandae ipsam?</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem laborum pariatur alias, culpa illum quaerat,</p>
                 <div class="user">
                     <img src="images/pic-5.png" alt="">
                     <div class="info">
@@ -513,7 +517,7 @@
             </div>
 
             <div class="swiper-slide slide">
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem laborum pariatur alias, culpa illum quaerat, aliquid laboriosam voluptatem nisi repellat obcaecati, adipisci esse ab delectus dolorum ut recusandae ipsam?</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem laborum pariatur alias, culpa illum quaerat,</p>
                 <div class="user">
                     <img src="images/pic-6.png" alt="">
                     <div class="info">
@@ -542,42 +546,42 @@
         <div class="box">
             <img src="images/serv-1.png" alt="">
             <h3>Tours</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, nihil?</p>
+            <p>a great variety of destinations to explore around Cali</p>
             <a href="#" class="btn">read more</a>
         </div>
 
         <div class="box">
             <img src="images/serv-2.png" alt="">
             <h3>Spanish</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, nihil?</p>
+            <p>learn the language with local people while having fun!</p>
             <a href="#" class="btn">read more</a>
         </div>
 
         <div class="box">
             <img src="images/serv-3.png" alt="">
-            <h3>Salsa</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, nihil?</p>
+            <h3>Dance Classes</h3>
+            <p>Salsa or Bachata or maybe a traditional rhythim like Cumbia.</p>
             <a href="#" class="btn">read more</a>
         </div>
 
         <div class="box">
             <img src="images/serv-4.png" alt="">
             <h3>Hiking</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, nihil?</p>
+            <p>we love nature, what about hiking through the mountains and rivers.</p>
             <a href="#" class="btn">read more</a>
         </div>
 
         <div class="box">
             <img src="images/serv-5.png" alt="">
-            <h3>Enjoy</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, nihil?</p>
+            <h3>Enjoyment and fun</h3>
+            <p>all of this make the perfect scenario to have quality fun guaranteed!</p>
             <a href="#" class="btn">read more</a>
         </div>
 
         <div class="box">
             <img src="images/serv-6.png" alt="">
             <h3>various adventures</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, nihil?</p>
+            <p>plus we have several new ideas coming out soon, stay updated !</p>
             <a href="#" class="btn">read more</a>
         </div>
         
@@ -597,40 +601,40 @@
 
         <div class="swiper-wrapper">
 
-            <div class="swiper-slide slide">
+            <div class="swiper-slide slide" data-aos="fade-up">
                 <img src="./images/restaurant.jpg" alt="">
                 <div class="icons">
                     <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
                     <a href="#"> <i class="fas fa-user"></i> by admin </a>
                 </div>
                 <h3>Best restaurants in Cali</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, deserunt.</p>
+                <p>the top 5 places to get tasty food in Cali</p>
                 <a href="#" class="btn">read more</a>
             </div>
 
-            <div class="swiper-slide slide">
+            <div class="swiper-slide slide" data-aos="fade-up">
                 <img src="./images/night.jpg" alt="">
                 <div class="icons">
                     <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
                     <a href="#"> <i class="fas fa-user"></i> by admin </a>
                 </div>
                 <h3>Nightlife </h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, deserunt.</p>
+                <p>the best places in Cali to party until dawn or beyond</p>
                 <a href="#" class="btn">read more</a>
             </div>
 
-            <div class="swiper-slide slide">
+            <div class="swiper-slide slide" data-aos="fade-up">
                 <img src="./images/notes.jpg" alt="">
                 <div class="icons">
                     <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
                     <a href="#"> <i class="fas fa-user"></i> by admin </a>
                 </div>
                 <h3>10 things you should know </h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, deserunt.</p>
+                <p>you should know these things about Cali for sure!.</p>
                 <a href="#" class="btn">read more</a>
             </div>
 
-            <div class="swiper-slide slide">
+            <div class="swiper-slide slide" data-aos="fade-in">
                 <img src="./images/climbing.jpg" alt="">
                 <div class="icons">
                     <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
@@ -641,7 +645,7 @@
                 <a href="#" class="btn">read more</a>
             </div>
 
-            <div class="swiper-slide slide">
+            <div class="swiper-slide slide" data-aos="fade-in">
                 <img src="./images/study.jpg" alt="">
                 <div class="icons">
                     <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
@@ -652,7 +656,7 @@
                 <a href="#" class="btn">read more</a>
             </div>
 
-            <div class="swiper-slide slide">
+            <div class="swiper-slide slide" data-aos="fade-in">
                 <img src="./images/remote.jpg" alt="">
                 <div class="icons">
                     <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
@@ -675,7 +679,7 @@
 
 <section class="newsletter">
 
-    <div class="content">
+    <div class="content" data-aos="fade-down-right">
         <h1 class="heading">subscribe now</h1>
         <p>If you subscribe you'll have the chance to win an amazing experience with us</p>
         <form action="">
@@ -707,10 +711,10 @@
 
         <div class="box">
             <h3>quick links</h3>
-            <a href="index.html">home</a>
-            <a href="about.html">about</a>
-            <a href="services.html">services</a>
-            <a href="book.html">reserve</a>
+            <a href="index.html"> <i class="fas fa-angle-right"></i>home</a>
+            <a href="about.html"> <i class="fas fa-angle-right"></i>about</a>
+            <a href="services.html"> <i class="fas fa-angle-right"></i>services</a>
+            <a href="book.html"> <i class="fas fa-angle-right"></i>reserve</a>
         </div>
 
         <!-- <div class="box">
@@ -740,7 +744,7 @@
         </div>
 
     </div>
-    <hr style="color: black;">
+
     <div class="credit">created by <span>Andres Tamayo</span> with coffe and love | all rights reserved!</div>
 
 </section>
@@ -750,13 +754,26 @@
 
 
 
-
-
-
+<!-- swiper js link  -->
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
 <script src="./script.js"></script>
+<!--    Animate script    -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!--    google translate    -->
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+    function googleTranslateElementInit(){
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    }
+</script>
 
 </body>
 </html>
